@@ -1,10 +1,15 @@
 # ias-bash-lib-findbin
 
-Here is an introduction to this project.
+ias-bash-lib-findbin does (almost) the same thing as Perl's FindBin.
+
+This allows for scripts that refer to files relative to themselves to still do this
+when they've been symbolically linked somewhere else.
+
+This has been tested in cron.
 
 # License
 
-copyright (C) 2017 Author, Institution
+copyright (C) 2017 Martin VanWinkle, Institute for Advanced Study
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -19,6 +24,15 @@ GNU General Public License for more details.
 See 
 
 * http://www.gnu.org/licenses/
+
+## Synopsis
+
+See src/example.sh for a short example.  You should be able to symbolically link it
+anywhere, and run it.  It will find HelloLibrary.sh , and call a function defined in it.
+
+<pre>
+
+</pre>
 
 ## Description
 
