@@ -31,6 +31,10 @@ See src/example.sh for a short example.  You should be able to symbolically link
 anywhere, and run it.  It will find HelloLibrary.sh , and call a function defined in it.
 
 <pre>
+. /opt/IAS/lib/bash4/IAS-FindBin/FindBin.sh
+export PATH="${BASH_FINDBIN_REALBIN}:${PATH}"
+
+. HelloLibrary.sh
 
 </pre>
 
