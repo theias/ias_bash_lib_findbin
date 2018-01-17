@@ -99,3 +99,9 @@ This will generate a new spec file every time:
 fakeroot make clean install rpmspec rpmbuild
 </pre>
 
+# Notes
+
+* The deb depends on the "realpath" package
+* /usr/bin/realpath is provided by the coreutils rpm , which I'm assuming
+will be installed on any reasonable system, so I'm not (at this time)
+including it in the list of dependencies for rpm.
